@@ -24,6 +24,8 @@ OAuth tokeny ani cloudová přihlašovací cookie nejsou přístupné JavaScript
 ## Jak dlouho
 
 - Aktivní seznam účtů a kanálů zůstává do smazání cloudového profilu nebo ukončení bety.
+- Pokud použiješ losování, ukládají se také jeho nastavení, přezdívky a identifikátory přihlášených účastníků, vybraní vítězové a omezená historie losování. Tyto údaje jsou součástí stejného šifrovaného cloudového profilu. V cloudové betě je omezený počet účastníků a uložených minulých losování.
+- U anket se uchovávají jejich identifikátory, stav pořadatele a údaje pro obnovení ankety. Společná služba anket ověřuje připojený Twitch/Kick účet, aby omezila opakované hlasování. Přihlašovací tokeny se nepředávají ostatním účastníkům.
 - Zprávy nejsou dlouhodobě archivované v databázi. Server drží nejvýše 250 zpráv na profil v provozní paměti. Po posledním odpojení se přibližně za 5 minut čtečky a tato paměť zruší; restart ji vymaže také.
 - Poskytovatelé infrastruktury mohou uchovávat krátkodobé technické záznamy a zálohy podle vlastních podmínek.
 
@@ -32,6 +34,8 @@ OAuth tokeny ani cloudová přihlašovací cookie nejsou přístupné JavaScript
 V nastavení můžeš odhlásit aktuální relaci nebo smazat cloudový profil včetně připojených účtů a uložených kanálů. Smazání se týká aktivních záznamů PoloChatu; zpracování případných infrastrukturních záloh se řídí jejich retenční dobou. Odstranění cloudového profilu neodhlašuje samostatně připojený desktop. Úplné odvolání oprávnění aplikace provedeš také v nastavení připojených aplikací Twitche/Kicku.
 
 Cloud nepoužíváme k prodeji chatových zpráv ani k reklamnímu sledování. Pro dotazy a požadavky na odstranění dat kontaktuj poloafkontakt@gmail.com.
+
+Moderátorské akce se provádějí jen na pokyn uživatele přes příslušnou platformu. Další oprávnění pro moderaci se vyžádají zvlášť. Platforma ověřuje oprávnění k akcím a může uchovávat vlastní moderátorské záznamy.
 
 Aktualizováno 22. 10. 2026. Tyto zásady se vztahují na volitelnou cloudovou betu PoloChatu.
 
