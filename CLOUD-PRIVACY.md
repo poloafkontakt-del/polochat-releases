@@ -37,5 +37,16 @@ Cloud nepoužíváme k prodeji chatových zpráv ani k reklamnímu sledování. 
 
 Moderátorské akce se provádějí jen na pokyn uživatele přes příslušnou platformu. Další oprávnění pro moderaci se vyžádají zvlášť. Platforma ověřuje oprávnění k akcím a může uchovávat vlastní moderátorské záznamy.
 
-Aktualizováno 22. 10. 2026. Tyto zásady se vztahují na volitelnou cloudovou betu PoloChatu.
+Aktualizováno 25. 10. 2026. Tyto zásady se vztahují na volitelnou cloudovou betu PoloChatu.
 
+
+
+## PoloPoints — společné účty a virtuální body
+
+Po zapnutí PoloPoints ukládáme do samostatných tabulek stejné databáze Neonu serverově ověřené identifikátory a zobrazované názvy propojených Twitch/Kick účtů, jejich vazbu na společný účet, vlastnictví kanálů a oprávnění ve streamerském obchodě. Účty se nespojují podle přezdívky; druhou platformu připojuje uživatel výslovně. OAuth tokeny zůstávají ve stávajícím šifrovaném trezoru a nejsou součástí bodových tabulek ani účetních exportů.
+
+Samostatně pro každého streamera vedeme peněženky, změny zůstatků, důvody a časy změn, identitu oprávněného aktéra, nabídku virtuálních odměn, objednávky, jejich vyřízení a vrácení bodů. K prokázání aktivity a zabránění opakovanému připsání ukládáme identifikátory, časy a omezené příznaky serverem přijatých veřejných chatových událostí; bodové tabulky neukládají celý text zpráv. Samotné otevření videa neprokazuje sledování a nepřipisuje body. Body nejsou skutečné peníze a beta neprovádí platby.
+
+Bodové tabulky nejsou samostatně šifrovány aplikačním master key jako OAuth trezor. Přístup k nim zajišťuje server s ověřenou relací, kontrolou vlastníka/administrátora a oddělením obchodů; přenos do databáze používá ověřené TLS. Uživatel vidí vlastní zůstatky a objednávky, oprávněný vlastník či administrátor svého obchodu příslušné peněženky, objednávky a audit.
+
+Odhlášení, odpojení platformy ani smazání cloudového profilu automaticky neodstraňuje účetní a auditní historii PoloPoints. Zachování záznamů umožňuje ověřit změny, zabránit dvojímu připsání a řešit reklamace; automatická doba výmazu v této betě zatím není nastavena. Požadavky na přístup, opravu nebo odstranění těchto údajů řeší podpora poloafkontakt@gmail.com. Infrastrukturní zálohy mají vlastní dobu uchování. Vypnutí funkce zastaví její používání a záznamy zachová.
